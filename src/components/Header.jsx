@@ -20,8 +20,8 @@ function Header() {
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             >
-                <nav className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 py-2 h-full sm:py-0">
-                    <ul className="flex h-full w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+                <nav className="flex fixed w-full sm:w-fit top-[0.15rem] left-1/2 -translate-x-1/2 py-2 h-full sm:py-0">
+                    <ul className="flex  h-full w-full sm:w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
                         {links.map((link) => (
                             <motion.li
                                 className="h-3/4 flex items-center justify-center relative"
