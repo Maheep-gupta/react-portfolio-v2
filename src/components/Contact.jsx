@@ -65,7 +65,7 @@ function Contact() {
             <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="mt-10 flex flex-col dark:text-black"
+                className="mt-10 flex flex-col dark:text-black mx-2 sm:m-0"
             >
                 <input
                     className="h-14 px-4 mb-3 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
