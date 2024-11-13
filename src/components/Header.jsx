@@ -36,7 +36,7 @@ function Header() {
                                     // spy={true}
                                     // activeClass='text-gray-950 dark:text-gray-200  '
                                     onClick={()=>setActive(link.name)}
-                                    className={`flex w-full items-center justify-center px-3 py-3 text-gray-500 transition 
+                                    className={`flex w-full items-center text-xs sm:text-sm justify-center px-2 py-1 sm:px-3 sm:py-3 text-gray-500 transition 
                                         dark:text-gray-500 cursor-pointer dark:hover:text-gray-300 hover:text-gray-950  ${active === link.name?"text-gray-950 dark:text-gray-200":""}`}
                                 >
                                     {link.name}
