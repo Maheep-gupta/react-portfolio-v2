@@ -5,10 +5,13 @@ function ToggleButton() {
     const {isDark , setIsDark}= useContext(ThemeContext)
     if (isDark) {
         document.documentElement.classList.add("dark");
-        document.documentElement.classList.remove("light");
+      document.documentElement.classList.remove("light");
+      favicon.href = '/favicon-dark.ico'
       } else {
         document.documentElement.classList.add("light");
-        document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
+      favicon.href = '/favicon.ico'
+      
       }
   return (
     <button
