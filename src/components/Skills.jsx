@@ -15,18 +15,28 @@ function Skills() {
         }),
     };
     const skillsData = [
+        "Core Java",
         "HTML",
         "CSS",
         "JavaScript",
         "TypeScript",
-        "React",
+        "ReactJs",
         "Next.js",
         "Node.js",
+        "Socket.io",
+        "ExpressJs",
         "Git",
+        "GitHub",
         "Tailwind",
-        "MongoDB",
-        "Express",
+        "Bootstrap",
         "Framer Motion",
+        "MongoDB",
+        "SQL",
+        "JDBC",
+        "Hibernate",
+        "RESTful APIs",
+        "Vercel",
+
       ]
     return (
         <section
