@@ -25,7 +25,7 @@ function Experience() {
       title: "Graduation",
       location: "Sultanpur, U.P.",
       description:
-        "I am currently pursuing a Bachelor of Technology and am in my last year, seeking a job.",
+        "I am currently pursuing a Bachelor of Technology and  i am in my Final Year, seeking a job.",
       icon: React.createElement(LuGraduationCap),
       date: "2021-2025",
     },
@@ -41,7 +41,7 @@ function Experience() {
       title: "Java FullStack Trainee",
       location: "JSpiders - Training & Development Center, Bengaluru",
       description:
-        "At JSpiders, I trained as a Java Full Stack Developer, gaining expertise in Core and Advanced Java, SQL, JDBC, Hibernate, HTML, CSS, and JavaScript.",
+        "At JSpiders, I am getting trained as a Java Full Stack Developer, gaining expertise in Core and Advanced Java, SQL, JDBC, Hibernate, HTML, CSS, and JavaScript.",
       icon: React.createElement(FaReact),
       date: "Apr-2024 - Current",
     },
