@@ -50,11 +50,11 @@ function Contact() {
                 once: true,
             }}
         >
-      <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+      <h2 className="text-3xl font-medium capitalize pb-3 text-center">
         Contact me
       </h2>
 
-            <p className="text-gray-700 -mt-6 dark:text-white/80">
+            <p className="text-gray-700 mb-3  dark:text-white/80">
                 Please contact me directly at{" "}
                 <a className="underline" href="mailto:maheepgupta321@gmail.com">
                     maheepgupta321@gmail.com

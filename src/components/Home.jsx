@@ -52,11 +52,11 @@ const Home = () => {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl  font-normal font-outfit !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Maheep gupta.</span> I'm an Emerging{" "}
+        <span className="font-bold">Hello, I'm Maheep Gupta.</span> I'm an Emerging{" "}
         <span className="font-bold">full-stack developer</span> I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">MERN Technology , </span> <span className="underline">Java</span> and {" "}
@@ -73,14 +73,14 @@ const Home = () => {
       >
         <Link
           to="contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center font-outfit gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 font-outfit"
           href="/Resume.pdf"
           download
         >
@@ -90,19 +90,19 @@ const Home = () => {
         <div className='flex gap-x-2'>
 
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white h-8 w-8 justify-center  text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack font-outfit dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/maheep-gupta-281867222/"
             target="_blank"
           >
-            <BsLinkedin />
+            <BsLinkedin className='text-lg' />
           </a>
 
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white  h-8 w-8  justify-center text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer font-outfit borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/Maheep-gupta/"
             target="_blank"
           >
-            <FaGithubSquare />
+            <FaGithubSquare className='text-lg' />
           </a>
         </div>
       </motion.div>

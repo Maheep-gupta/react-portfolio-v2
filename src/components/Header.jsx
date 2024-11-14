@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll'; 
+import { Link } from 'react-scroll';
+import { FaBarsStaggered } from 'react-icons/fa6';
 
 function Header() {
     const links = [
-        { name: "Home", hash: "home" }, 
+        { name: "Home", hash: "home" },
         { name: "About", hash: "about" },
         { name: "Projects", hash: "projects" },
         { name: "Skills", hash: "skills" },
@@ -21,7 +22,9 @@ function Header() {
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             >
                 <nav className="flex fixed w-full sm:w-fit top-[0.15rem] left-1/2 -translate-x-1/2 py-2 h-full sm:py-0">
-                    <ul className="flex  h-full w-full sm:w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
+
+
+                    <ul className="flex h-full w-full sm:w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:flex-nowrap sm:gap-5">
                         {links.map((link) => (
                             <motion.li
                                 className="h-3/4 flex items-center justify-center relative"
@@ -30,18 +33,18 @@ function Header() {
                                 animate={{ y: 0, opacity: 1 }}
                             >
                                 <Link
-                                    to={link.hash} 
+                                    to={link.hash}
                                     smooth={true}
-                                    duration={500} 
+                                    duration={500}
                                     // spy={true}
                                     // activeClass='text-gray-950 dark:text-gray-200  '
-                                    onClick={()=>setActive(link.name)}
-                                    className={`flex w-full items-center text-xs sm:text-sm justify-center px-2 py-1 sm:px-3 sm:py-3 text-gray-500 transition 
-                                        dark:text-gray-500 cursor-pointer dark:hover:text-gray-300 hover:text-gray-950  ${active === link.name?"text-gray-950 dark:text-gray-200":""}`}
+                                    onClick={() => setActive(link.name)}
+                                    className={`flex font-outfit w-full items-center text-xs sm:text-sm justify-center px-2 py-1 sm:px-3 sm:py-3 text-gray-500 transition 
+                                        dark:text-gray-500 cursor-pointer dark:hover:text-gray-300 hover:text-gray-950  ${active === link.name ? "text-gray-950 dark:text-gray-200" : ""}`}
                                 >
                                     {link.name}
                                     <motion.span
-                                        className={` transition-all duration-75 rounded-full absolute inset-0 -z-10  ${active===link.name?'bg-gray-100 dark:bg-gray-800':''}`}
+                                        className={` transition-all duration-75 rounded-full absolute inset-0 -z-10  ${active === link.name ? 'bg-gray-100 dark:bg-gray-800' : ''}`}
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",
@@ -53,6 +56,14 @@ function Header() {
                             </motion.li>
                         ))}
                     </ul>
+
+                    {/* <div className='lg:hidden w-full flex items-center mx-2'>
+
+                    <h2 className="text-2xl font-medium capitalize text-center w-full">
+                        Maheep gupta
+                        </h2>
+                        <FaBarsStaggered className='text-2xl' />
+                    </div> */}
                 </nav>
             </motion.div>
         </header>
