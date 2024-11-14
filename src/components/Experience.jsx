@@ -53,20 +53,20 @@ function Experience() {
         My Experience
       </h2>
       
-      <VerticalTimeline lineColor={isDark ? "#fafafa" : "#E5E7EB"}>
+      <VerticalTimeline lineColor={isDark ? "rgb(255 255 255 / 0.6)" : "#E5E7EB"}>
         {experiencesData.reverse().map((item, index) => (
           <VerticalTimelineElement
             key={index}
             contentStyle={{
               background: !isDark ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
               boxShadow: "none",
-              border: "1px solid rgba(0, 0, 0, 0.05)",
+              border: "1px solid rgb(255 255 255 / 0.6)",
               textAlign: "left",
               padding: "1.3rem 2rem",
             }}
             contentArrowStyle={{
               borderRight:
-                !isDark ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                !isDark ? "0.4rem solid #9ca3af" : "0.4rem solid rgba(255, 255, 255, 0.6)",
             }}
             date={item.date}
             icon={item.icon}

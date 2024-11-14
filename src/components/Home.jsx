@@ -73,14 +73,14 @@ const Home = () => {
       >
         <Link
           to="contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center font-outfit gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group dark:border bg-gray-900 text-white px-7 py-3 flex items-center font-outfit gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 font-outfit border"
+          className="group bg-white px-7 py-3 dark:border-0 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 font-outfit border"
           href="https://drive.google.com/file/d/1MUmgCjjx5eLuaM9OSpZKOJfCN0QIjl6u/view?usp=sharing"
           target='_blank'
           download
@@ -91,7 +91,7 @@ const Home = () => {
         <div className='flex gap-x-2'>
 
           <a
-            className="bg-white h-8 w-8 justify-center  text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] border active:scale-105 transition cursor-pointer borderBlack font-outfit dark:bg-white/10 dark:text-white/60"
+            className="bg-white h-8 w-8 justify-center dark:border-0  text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] border active:scale-105 transition cursor-pointer borderBlack font-outfit dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/maheep-gupta-281867222/"
             target="_blank"
           >
@@ -99,7 +99,7 @@ const Home = () => {
           </a>
 
           <a
-            className="bg-white  h-8 w-8  justify-center text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 border active:scale-105 transition cursor-pointer font-outfit borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white  h-8 w-8  justify-center dark:border-0 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 border active:scale-105 transition cursor-pointer font-outfit borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/Maheep-gupta/"
             target="_blank"
           >

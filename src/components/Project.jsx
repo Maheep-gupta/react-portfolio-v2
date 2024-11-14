@@ -34,12 +34,12 @@ function Project({
                         <h3 className="text-2xl font-semibold">{title}</h3>
 
                         <div className='flex gap-x-1 items-center'>
-                            <a href={projectUrl} target='_blank'  >
+                            <a className='dark:text-white/60' href={projectUrl} target='_blank'  >
 
                                 <RxExternalLink className='text-2xl' />
                             </a>
                             {githubUrl !== "" ?
-                                <a href={githubUrl} target='_blank' >
+                                <a className='dark:text-white/60' href={githubUrl} target='_blank' >
 
                                     <FaGithubSquare className='text-2xl' />
                                 </a>
