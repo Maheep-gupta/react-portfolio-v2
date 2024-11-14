@@ -54,7 +54,7 @@ function Experience() {
       </h2>
       
       <VerticalTimeline lineColor={isDark ? "#fafafa" : "#E5E7EB"}>
-        {experiencesData.map((item, index) => (
+        {experiencesData.reverse().map((item, index) => (
           <VerticalTimelineElement
             key={index}
             contentStyle={{
